@@ -14,6 +14,7 @@
 		1B9CE0002C3B978800B31385 /* app_dedsec_clTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9CDFFF2C3B978800B31385 /* app_dedsec_clTests.swift */; };
 		1B9CE00A2C3B978800B31385 /* app_dedsec_clUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9CE0092C3B978800B31385 /* app_dedsec_clUITests.swift */; };
 		1B9CE00C2C3B978800B31385 /* app_dedsec_clUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9CE00B2C3B978800B31385 /* app_dedsec_clUITestsLaunchTests.swift */; };
+		1B9CE0192C3BAD7A00B31385 /* DedsecIngress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9CE0182C3BAD7A00B31385 /* DedsecIngress.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,16 +35,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1B9CDFEB2C3B978700B31385 /* app_dedsec_cl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = app_dedsec_cl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B9CDFEB2C3B978700B31385 /* app.dedsec.cl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = app.dedsec.cl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B9CDFEE2C3B978700B31385 /* app_dedsec_clApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app_dedsec_clApp.swift; sourceTree = "<group>"; };
 		1B9CDFF02C3B978700B31385 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1B9CDFF22C3B978800B31385 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B9CDFF52C3B978800B31385 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		1B9CDFFB2C3B978800B31385 /* app_dedsec_clTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = app_dedsec_clTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B9CDFFB2C3B978800B31385 /* app.dedsec.clTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = app.dedsec.clTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B9CDFFF2C3B978800B31385 /* app_dedsec_clTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app_dedsec_clTests.swift; sourceTree = "<group>"; };
-		1B9CE0052C3B978800B31385 /* app_dedsec_clUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = app_dedsec_clUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B9CE0052C3B978800B31385 /* app.dedsec.clUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = app.dedsec.clUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B9CE0092C3B978800B31385 /* app_dedsec_clUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app_dedsec_clUITests.swift; sourceTree = "<group>"; };
 		1B9CE00B2C3B978800B31385 /* app_dedsec_clUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app_dedsec_clUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1B9CE0182C3BAD7A00B31385 /* DedsecIngress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DedsecIngress.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,9 +86,9 @@
 		1B9CDFEC2C3B978700B31385 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1B9CDFEB2C3B978700B31385 /* app_dedsec_cl.app */,
-				1B9CDFFB2C3B978800B31385 /* app_dedsec_clTests.xctest */,
-				1B9CE0052C3B978800B31385 /* app_dedsec_clUITests.xctest */,
+				1B9CDFEB2C3B978700B31385 /* app.dedsec.cl.app */,
+				1B9CDFFB2C3B978800B31385 /* app.dedsec.clTests.xctest */,
+				1B9CE0052C3B978800B31385 /* app.dedsec.clUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,6 +98,7 @@
 			children = (
 				1B9CDFEE2C3B978700B31385 /* app_dedsec_clApp.swift */,
 				1B9CDFF02C3B978700B31385 /* ContentView.swift */,
+				1B9CE0182C3BAD7A00B31385 /* DedsecIngress.swift */,
 				1B9CDFF22C3B978800B31385 /* Assets.xcassets */,
 				1B9CDFF42C3B978800B31385 /* Preview Content */,
 			);
@@ -130,9 +133,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1B9CDFEA2C3B978700B31385 /* app_dedsec_cl */ = {
+		1B9CDFEA2C3B978700B31385 /* app.dedsec.cl */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1B9CE00F2C3B978800B31385 /* Build configuration list for PBXNativeTarget "app_dedsec_cl" */;
+			buildConfigurationList = 1B9CE00F2C3B978800B31385 /* Build configuration list for PBXNativeTarget "app.dedsec.cl" */;
 			buildPhases = (
 				1B9CDFE72C3B978700B31385 /* Sources */,
 				1B9CDFE82C3B978700B31385 /* Frameworks */,
@@ -142,14 +145,14 @@
 			);
 			dependencies = (
 			);
-			name = app_dedsec_cl;
+			name = app.dedsec.cl;
 			productName = app_dedsec_cl;
-			productReference = 1B9CDFEB2C3B978700B31385 /* app_dedsec_cl.app */;
+			productReference = 1B9CDFEB2C3B978700B31385 /* app.dedsec.cl.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1B9CDFFA2C3B978800B31385 /* app_dedsec_clTests */ = {
+		1B9CDFFA2C3B978800B31385 /* app.dedsec.clTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1B9CE0122C3B978800B31385 /* Build configuration list for PBXNativeTarget "app_dedsec_clTests" */;
+			buildConfigurationList = 1B9CE0122C3B978800B31385 /* Build configuration list for PBXNativeTarget "app.dedsec.clTests" */;
 			buildPhases = (
 				1B9CDFF72C3B978800B31385 /* Sources */,
 				1B9CDFF82C3B978800B31385 /* Frameworks */,
@@ -160,14 +163,14 @@
 			dependencies = (
 				1B9CDFFD2C3B978800B31385 /* PBXTargetDependency */,
 			);
-			name = app_dedsec_clTests;
+			name = app.dedsec.clTests;
 			productName = app_dedsec_clTests;
-			productReference = 1B9CDFFB2C3B978800B31385 /* app_dedsec_clTests.xctest */;
+			productReference = 1B9CDFFB2C3B978800B31385 /* app.dedsec.clTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		1B9CE0042C3B978800B31385 /* app_dedsec_clUITests */ = {
+		1B9CE0042C3B978800B31385 /* app.dedsec.clUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1B9CE0152C3B978800B31385 /* Build configuration list for PBXNativeTarget "app_dedsec_clUITests" */;
+			buildConfigurationList = 1B9CE0152C3B978800B31385 /* Build configuration list for PBXNativeTarget "app.dedsec.clUITests" */;
 			buildPhases = (
 				1B9CE0012C3B978800B31385 /* Sources */,
 				1B9CE0022C3B978800B31385 /* Frameworks */,
@@ -178,9 +181,9 @@
 			dependencies = (
 				1B9CE0072C3B978800B31385 /* PBXTargetDependency */,
 			);
-			name = app_dedsec_clUITests;
+			name = app.dedsec.clUITests;
 			productName = app_dedsec_clUITests;
-			productReference = 1B9CE0052C3B978800B31385 /* app_dedsec_clUITests.xctest */;
+			productReference = 1B9CE0052C3B978800B31385 /* app.dedsec.clUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -206,7 +209,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1B9CDFE62C3B978700B31385 /* Build configuration list for PBXProject "app_dedsec_cl" */;
+			buildConfigurationList = 1B9CDFE62C3B978700B31385 /* Build configuration list for PBXProject "app.dedsec.cl" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -219,9 +222,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1B9CDFEA2C3B978700B31385 /* app_dedsec_cl */,
-				1B9CDFFA2C3B978800B31385 /* app_dedsec_clTests */,
-				1B9CE0042C3B978800B31385 /* app_dedsec_clUITests */,
+				1B9CDFEA2C3B978700B31385 /* app.dedsec.cl */,
+				1B9CDFFA2C3B978800B31385 /* app.dedsec.clTests */,
+				1B9CE0042C3B978800B31385 /* app.dedsec.clUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -259,6 +262,7 @@
 			files = (
 				1B9CDFF12C3B978700B31385 /* ContentView.swift in Sources */,
 				1B9CDFEF2C3B978700B31385 /* app_dedsec_clApp.swift in Sources */,
+				1B9CE0192C3BAD7A00B31385 /* DedsecIngress.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,12 +288,12 @@
 /* Begin PBXTargetDependency section */
 		1B9CDFFD2C3B978800B31385 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1B9CDFEA2C3B978700B31385 /* app_dedsec_cl */;
+			target = 1B9CDFEA2C3B978700B31385 /* app.dedsec.cl */;
 			targetProxy = 1B9CDFFC2C3B978800B31385 /* PBXContainerItemProxy */;
 		};
 		1B9CE0072C3B978800B31385 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1B9CDFEA2C3B978700B31385 /* app_dedsec_cl */;
+			target = 1B9CDFEA2C3B978700B31385 /* app.dedsec.cl */;
 			targetProxy = 1B9CE0062C3B978800B31385 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -419,9 +423,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"app_dedsec_cl/Preview Content\"";
+				DEVELOPMENT_TEAM = V43K8NGK42;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -429,13 +435,15 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "dedsec-corp.app-dedsec-cl";
+				PRODUCT_BUNDLE_IDENTIFIER = "dedsec-corp.app.dedsec.cl";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -447,9 +455,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"app_dedsec_cl/Preview Content\"";
+				DEVELOPMENT_TEAM = V43K8NGK42;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -457,13 +467,15 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "dedsec-corp.app-dedsec-cl";
+				PRODUCT_BUNDLE_IDENTIFIER = "dedsec-corp.app.dedsec.cl";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -485,7 +497,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/app_dedsec_cl.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/app_dedsec_cl";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/app.dedsec.cl.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/app.dedsec.cl";
 			};
 			name = Debug;
 		};
@@ -504,7 +516,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/app_dedsec_cl.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/app_dedsec_cl";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/app.dedsec.cl.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/app.dedsec.cl";
 			};
 			name = Release;
 		};
@@ -545,41 +557,41 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1B9CDFE62C3B978700B31385 /* Build configuration list for PBXProject "app_dedsec_cl" */ = {
+		1B9CDFE62C3B978700B31385 /* Build configuration list for PBXProject "app.dedsec.cl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1B9CE00D2C3B978800B31385 /* Debug */,
 				1B9CE00E2C3B978800B31385 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		1B9CE00F2C3B978800B31385 /* Build configuration list for PBXNativeTarget "app_dedsec_cl" */ = {
+		1B9CE00F2C3B978800B31385 /* Build configuration list for PBXNativeTarget "app.dedsec.cl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1B9CE0102C3B978800B31385 /* Debug */,
 				1B9CE0112C3B978800B31385 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		1B9CE0122C3B978800B31385 /* Build configuration list for PBXNativeTarget "app_dedsec_clTests" */ = {
+		1B9CE0122C3B978800B31385 /* Build configuration list for PBXNativeTarget "app.dedsec.clTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1B9CE0132C3B978800B31385 /* Debug */,
 				1B9CE0142C3B978800B31385 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		1B9CE0152C3B978800B31385 /* Build configuration list for PBXNativeTarget "app_dedsec_clUITests" */ = {
+		1B9CE0152C3B978800B31385 /* Build configuration list for PBXNativeTarget "app.dedsec.clUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1B9CE0162C3B978800B31385 /* Debug */,
 				1B9CE0172C3B978800B31385 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
