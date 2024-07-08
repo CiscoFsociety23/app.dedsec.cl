@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:">
+      location = "self:/Users/sysadmin/Workspace/Dedsec/app_dedsec_cl/app.dedsec.cl.xcodeproj">
    </FileRef>
 </Workspace>
