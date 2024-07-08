@@ -147,20 +147,37 @@ struct DedsecIngress: View {
 // Vista de éxito
 struct SuccessView: View {
     var token: String
-    
+    @State private var showUserCreation = false
+
     var body: some View {
-        ZStack {
-            Color(red: 45/255, green: 50/255, blue: 80/255)
-                .edgesIgnoringSafeArea(.all)
-            VStack {
-                Text("Autenticación exitosa")
-                    .font(.title)
-                    .foregroundColor(Color(red: 112/255, green: 119/255, blue: 161/255))
-                    .padding(.bottom, 40)
+        NavigationStack {
+            ZStack {
+                Color(red: 45/255, green: 50/255, blue: 80/255)
+                    .edgesIgnoringSafeArea(.all)
+                VStack {
+                    Text("Autenticación exitosa")
+                        .font(.title)
+                        .foregroundColor(Color(red: 112/255, green: 119/255, blue: 161/255))
+                        .padding(.bottom, 40)
+                    Button(action: {
+                        showUserCreation = true
+                    }) {
+                        Text("Agregar Usuario")
+                            .padding()
+                            .foregroundColor(Color(red: 45/255, green: 50/255, blue: 80/255))
+                            .background(Color(red: 112/255, green: 119/255, blue: 161/255))
+                            .cornerRadius(20)
+                    }
+                }
             }
+            .navigationDestination(isPresented: $showUserCreation) {
+                UserCreation(isPresented: $showUserCreation)
+            }
+            .navigationBarHidden(true)
         }
     }
 }
+
 
 #Preview {
     DedsecIngress()
