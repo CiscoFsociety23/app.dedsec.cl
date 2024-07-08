@@ -14,6 +14,7 @@
 		1B9CE0002C3B978800B31385 /* app_dedsec_clTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9CDFFF2C3B978800B31385 /* app_dedsec_clTests.swift */; };
 		1B9CE00A2C3B978800B31385 /* app_dedsec_clUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9CE0092C3B978800B31385 /* app_dedsec_clUITests.swift */; };
 		1B9CE00C2C3B978800B31385 /* app_dedsec_clUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9CE00B2C3B978800B31385 /* app_dedsec_clUITestsLaunchTests.swift */; };
+		1B9CE0192C3BAD7A00B31385 /* DedsecIngress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9CE0182C3BAD7A00B31385 /* DedsecIngress.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		1B9CE0052C3B978800B31385 /* app_dedsec_clUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = app_dedsec_clUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B9CE0092C3B978800B31385 /* app_dedsec_clUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app_dedsec_clUITests.swift; sourceTree = "<group>"; };
 		1B9CE00B2C3B978800B31385 /* app_dedsec_clUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app_dedsec_clUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1B9CE0182C3BAD7A00B31385 /* DedsecIngress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DedsecIngress.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				1B9CDFEE2C3B978700B31385 /* app_dedsec_clApp.swift */,
 				1B9CDFF02C3B978700B31385 /* ContentView.swift */,
+				1B9CE0182C3BAD7A00B31385 /* DedsecIngress.swift */,
 				1B9CDFF22C3B978800B31385 /* Assets.xcassets */,
 				1B9CDFF42C3B978800B31385 /* Preview Content */,
 			);
@@ -259,6 +262,7 @@
 			files = (
 				1B9CDFF12C3B978700B31385 /* ContentView.swift in Sources */,
 				1B9CDFEF2C3B978700B31385 /* app_dedsec_clApp.swift in Sources */,
+				1B9CE0192C3BAD7A00B31385 /* DedsecIngress.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
