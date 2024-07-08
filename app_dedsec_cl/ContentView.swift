@@ -9,16 +9,33 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack {
+            Color(red: 0.176, green: 0.196, blue: 0.314)
+                .edgesIgnoringSafeArea(.all)
+            VStack {
+                Text("Dedsec Corp")
+                    .font(.title)
+                    .foregroundColor(Color(red: 112/255, green: 119/255, blue: 161/255))
+                Text("Mobile App")
+                    .font(.subheadline)
+                    .foregroundColor(Color(red: 112/255, green: 119/255, blue: 161/255))
+                Button(action: {
+                    print("Botón presionado")
+                }) {
+                    Text("Ingresar")
+                        .padding(.horizontal, 20)
+                        .padding(.vertical, 10)
+                        .background(Color(red: 112/255, green: 119/255, blue: 161/255))
+                        .foregroundColor(Color(red: 45/255, green: 50/255, blue: 80/255))
+                        .cornerRadius(20)
+                }
+                .padding(.top, 10)
+            }
         }
-        .padding()
     }
 }
 
 #Preview {
     ContentView()
 }
+
