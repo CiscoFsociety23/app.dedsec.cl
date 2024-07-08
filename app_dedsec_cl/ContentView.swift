@@ -8,11 +8,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    func getAccess(){
-        print("Botón presionado")
-    }
-    
     var body: some View {
         NavigationView {
             ZStack {
@@ -41,4 +36,3 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
-

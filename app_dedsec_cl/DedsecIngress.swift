@@ -149,15 +149,30 @@ struct SuccessView: View {
     var token: String
     
     var body: some View {
-        ZStack {
-            Color(red: 45/255, green: 50/255, blue: 80/255)
-                .edgesIgnoringSafeArea(.all)
-            VStack {
-                Text("Autenticación exitosa")
-                    .font(.title)
-                    .foregroundColor(Color(red: 112/255, green: 119/255, blue: 161/255))
-                    .padding(.bottom, 40)
+        NavigationView {
+            ZStack {
+                Color(red: 45/255, green: 50/255, blue: 80/255)
+                    .edgesIgnoringSafeArea(.all)
+                VStack {
+                    Text("Autenticación exitosa")
+                        .font(.title)
+                        .foregroundColor(Color(red: 112/255, green: 119/255, blue: 161/255))
+                        .padding(.bottom, 40)
+                    NavigationLink(destination: UserCreation()){
+                        Text("Agregar Usuario")
+                            .padding()
+                            .foregroundColor(Color(red: 45/255, green: 50/255, blue: 80/255))
+                            .background(Color(red: 112/255, green: 119/255, blue: 161/255))
+                            .cornerRadius(20)
+                    }
+                }
             }
+            .navigationBarItems(leading: Button(action: {
+            // Acción para retroceder
+            }) {
+                Image(systemName: "chevron.left")
+                    .foregroundColor(.white)
+            })
         }
     }
 }
