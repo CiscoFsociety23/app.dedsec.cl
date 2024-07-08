@@ -19,28 +19,32 @@ struct DedsecIngress: View {
             Color(red: 45/255, green: 50/255, blue: 80/255)
                 .edgesIgnoringSafeArea(.all)
             VStack {
-                Text("Ingreso")
+                Text("Ingreso Aplicación")
                     .font(.title)
                     .foregroundColor(Color(red: 112/255, green: 119/255, blue: 161/255))
                     .padding(.bottom, 40)
                 
                 // Campo correo
-                TextField("Correo Electrónico", text: $email)
+                Text("Correo")
+                    .foregroundColor(Color(red: 112/255, green: 119/255, blue: 161/255))
+                TextField("", text: $email)
                     .autocapitalization(.none)
                     .padding()
-                    .background(Color.white)
+                    .background(Color(red: 66/255, green: 71/255, blue: 105/255))
                     .cornerRadius(5.0)
                     .padding(.bottom, 20)
-                    .foregroundColor(Color.black)
+                    .foregroundColor(Color(red: 246/255, green: 177/255, blue: 122/255))
                     .multilineTextAlignment(.center)
                 
+                Text("Contraseña")
+                    .foregroundColor(Color(red: 112/255, green: 119/255, blue: 161/255))
                 // Campo contraseña
-                SecureField("Contraseña", text: $password)
+                SecureField("", text: $password)
                     .padding()
-                    .background(Color.white)
+                    .background(Color(red: 66/255, green: 71/255, blue: 105/255))
                     .cornerRadius(5.0)
                     .padding(.bottom, 20)
-                    .foregroundColor(Color.black)
+                    .foregroundColor(Color(red: 246/255, green: 177/255, blue: 122/255))
                     .multilineTextAlignment(.center)
                 
                 // Botón ingreso
