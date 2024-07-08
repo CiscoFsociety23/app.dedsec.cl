@@ -26,9 +26,7 @@ struct DedsecIngress: View {
                 
                 // Campo correo
                 TextField("Correo Electrónico", text: $email)
-                    .onChange(of: email) { newValue in
-                        email = newValue.lowercased()
-                    }
+                    .autocapitalization(.none)
                     .padding()
                     .background(Color.white)
                     .cornerRadius(5.0)
