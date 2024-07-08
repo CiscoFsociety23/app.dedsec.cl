@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B1072DC2C3C5D5400D2D464 /* UserCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1072DB2C3C5D5400D2D464 /* UserCreation.swift */; };
 		1B9CDFEF2C3B978700B31385 /* app_dedsec_clApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9CDFEE2C3B978700B31385 /* app_dedsec_clApp.swift */; };
 		1B9CDFF12C3B978700B31385 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9CDFF02C3B978700B31385 /* ContentView.swift */; };
 		1B9CDFF32C3B978800B31385 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B9CDFF22C3B978800B31385 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B1072DB2C3C5D5400D2D464 /* UserCreation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCreation.swift; sourceTree = "<group>"; };
 		1B9CDFEB2C3B978700B31385 /* app.dedsec.cl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = app.dedsec.cl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B9CDFEE2C3B978700B31385 /* app_dedsec_clApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app_dedsec_clApp.swift; sourceTree = "<group>"; };
 		1B9CDFF02C3B978700B31385 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				1B9CDFEE2C3B978700B31385 /* app_dedsec_clApp.swift */,
 				1B9CDFF02C3B978700B31385 /* ContentView.swift */,
 				1B9CE0182C3BAD7A00B31385 /* DedsecIngress.swift */,
+				1B1072DB2C3C5D5400D2D464 /* UserCreation.swift */,
 				1B9CDFF22C3B978800B31385 /* Assets.xcassets */,
 				1B9CDFF42C3B978800B31385 /* Preview Content */,
 			);
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B9CDFF12C3B978700B31385 /* ContentView.swift in Sources */,
+				1B1072DC2C3C5D5400D2D464 /* UserCreation.swift in Sources */,
 				1B9CDFEF2C3B978700B31385 /* app_dedsec_clApp.swift in Sources */,
 				1B9CE0192C3BAD7A00B31385 /* DedsecIngress.swift in Sources */,
 			);
