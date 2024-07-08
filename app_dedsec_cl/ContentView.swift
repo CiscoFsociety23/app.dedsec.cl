@@ -8,17 +8,37 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    func getAccess(){
+        print("Botón presionado")
+    }
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            ZStack {
+                Color(red: 45/255, green: 50/255, blue: 80/255)
+                    .edgesIgnoringSafeArea(.all)
+                VStack {
+                    Text("Dedsec Corp")
+                        .font(.title)
+                        .foregroundColor(Color(red: 112/255, green: 119/255, blue: 161/255))
+                    Text("Mobile App")
+                        .font(.subheadline)
+                        .foregroundColor(Color(red: 112/255, green: 119/255, blue: 161/255))
+                    NavigationLink(destination: DedsecIngress()){
+                        Text("Ingresar")
+                            .padding()
+                            .foregroundColor(Color(red: 45/255, green: 50/255, blue: 80/255))
+                            .background(Color(red: 112/255, green: 119/255, blue: 161/255))
+                            .cornerRadius(20)
+                    }
+                }
+            }
         }
-        .padding()
     }
 }
 
 #Preview {
     ContentView()
 }
+
