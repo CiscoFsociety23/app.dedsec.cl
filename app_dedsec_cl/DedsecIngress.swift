@@ -147,9 +147,10 @@ struct DedsecIngress: View {
 // Vista de éxito
 struct SuccessView: View {
     var token: String
-    
+    @State private var showUserCreation = false
+
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 Color(red: 45/255, green: 50/255, blue: 80/255)
                     .edgesIgnoringSafeArea(.all)
@@ -158,7 +159,9 @@ struct SuccessView: View {
                         .font(.title)
                         .foregroundColor(Color(red: 112/255, green: 119/255, blue: 161/255))
                         .padding(.bottom, 40)
-                    NavigationLink(destination: UserCreation()){
+                    Button(action: {
+                        showUserCreation = true
+                    }) {
                         Text("Agregar Usuario")
                             .padding()
                             .foregroundColor(Color(red: 45/255, green: 50/255, blue: 80/255))
@@ -167,15 +170,14 @@ struct SuccessView: View {
                     }
                 }
             }
-            .navigationBarItems(leading: Button(action: {
-            // Acción para retroceder
-            }) {
-                Image(systemName: "chevron.left")
-                    .foregroundColor(.white)
-            })
+            .navigationDestination(isPresented: $showUserCreation) {
+                UserCreation(isPresented: $showUserCreation)
+            }
+            .navigationBarHidden(true)
         }
     }
 }
+
 
 #Preview {
     DedsecIngress()

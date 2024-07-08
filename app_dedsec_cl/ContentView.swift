@@ -20,6 +20,7 @@ struct ContentView: View {
                     Text("Mobile App")
                         .font(.subheadline)
                         .foregroundColor(Color(red: 112/255, green: 119/255, blue: 161/255))
+                        .padding(.bottom, 20)
                     NavigationLink(destination: DedsecIngress()){
                         Text("Ingresar")
                             .padding()
@@ -29,6 +30,7 @@ struct ContentView: View {
                     }
                 }
             }
+            .navigationBarHidden(true)
         }
     }
 }
