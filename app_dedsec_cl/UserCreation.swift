@@ -14,6 +14,7 @@ struct UserCreation: View {
     @State private var lastName = ""
     @State private var email = ""
     @State private var password = ""
+    @State private var profile = ""
     @State private var errorMessage = ""
     @State private var isAuthenticated = false
     @State private var token = ""
@@ -76,6 +77,17 @@ struct UserCreation: View {
                     .foregroundColor(Color(red: 246/255, green: 177/255, blue: 122/255))
                     .multilineTextAlignment(.center)
                 
+                // Campo Perfil
+                Text("Tipo perfil (1: Admin | 2: User)")
+                    .foregroundColor(Color(red: 112/255, green: 119/255, blue: 161/255))
+                SecureField("", text: $profile)
+                    .padding()
+                    .background(Color(red: 66/255, green: 71/255, blue: 105/255))
+                    .cornerRadius(5.0)
+                    .padding(.bottom, 20)
+                    .foregroundColor(Color(red: 246/255, green: 177/255, blue: 122/255))
+                    .multilineTextAlignment(.center)
+                
                 // Botón de Crear Usuario
                 Button(action: {
                     if validateFields() {
@@ -119,7 +131,7 @@ struct UserCreation: View {
     }
     
     func validateFields() -> Bool {
-        return !name.isEmpty && !lastName.isEmpty && !email.isEmpty && !password.isEmpty
+        return !name.isEmpty && !lastName.isEmpty && !email.isEmpty && !password.isEmpty && !profile.isEmpty
     }
     
     func createUser() {
@@ -132,7 +144,8 @@ struct UserCreation: View {
             "name": name,
             "lastName": lastName,
             "email": email,
-            "passwd": password
+            "passwd": password,
+            "profile": Int(profile)
         ]
         
         var request = URLRequest(url: url)
